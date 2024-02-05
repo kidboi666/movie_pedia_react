@@ -4,6 +4,10 @@
   align-items: center;
 }
 
+.list-style {
+  list-style: none;
+}
+
 .ReviewListItem-img {
   width: 200px;
   height: 300px;
