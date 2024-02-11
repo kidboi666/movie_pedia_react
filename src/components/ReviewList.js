@@ -22,8 +22,9 @@ function ReviewListItem({ item, onDelete }) {
 }
 
 function ReviewList({ items, onDelete }) {
+  // 파라미터로 items와 onDelete를 받음
   return (
-    <ul>
+    <ul className="list-wrap">
       {items.map((item) => (
         <li className="list-style" key={item.id}>
           <ReviewListItem item={item} onDelete={onDelete} />

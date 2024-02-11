@@ -1,0 +1,21 @@
+.ReviewForm {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 900px;
+  background-color: rgb(227, 227, 227);
+}
+
+.ReviewForm input,
+.ReviewForm textarea,
+.ReviewForm button {
+  border: none;
+}
+
+.ReviewForm input {
+  margin-bottom: 15px;
+}
+
+.ReviewForm label {
+  margin: 0;
+}

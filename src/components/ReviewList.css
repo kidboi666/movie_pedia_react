@@ -1,7 +1,15 @@
 .ReviewListItem {
   display: flex;
-  padding: 10px;
+  padding: 25px;
   align-items: center;
+  box-shadow: 5px 1px 20px rgb(202, 202, 202);
+}
+
+.list-wrap {
+  display: flex;
+  flex-direction: column;
+  width: 900px;
+  /* gap: 25px; */
 }
 
 .list-style {
@@ -13,4 +21,8 @@
   height: 300px;
   object-fit: cover;
   margin-right: 20px;
+}
+ul {
+  padding: 0;
+  gap: 30px;
 }

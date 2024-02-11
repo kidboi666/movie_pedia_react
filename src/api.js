@@ -1,12 +1,9 @@
-export async function getReviews({
-  order = "createdAt",
-  offset = 0,
-  limit = 6,
-}) {
-  const query = `order=${order}&offset=${offset}&limit=${limit}`;
-  const response = await fetch(
-    `https://learn.codeit.kr/9529/film-reviews?${query}`
-  );
+export async function getReviews({ order = "createdAt", offset = 0, limit = 6, search = "" }) {
+  const query = `order=${order}&offset=${offset}&limit=${limit}&search=${search}`;
+  const response = await fetch(`https://learn.codeit.kr/9529/film-reviews?${query}`);
+  if (!response.ok) {
+    throw new Error("리뷰를 불러오는데 실패했습니다");
+  }
   const body = await response.json();
   return body; // 이 함수는 결과적으로 특정 기준으로 정렬된 객체를 반환한다.
 }
